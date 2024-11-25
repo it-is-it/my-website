@@ -1,11 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './src/**/*.{js,jsx,ts,tsx}', // Include all JS, JSX, TS, and TSX files in the src folder
-    './public/index.html', // Include the main HTML file
-  ],
+  darkMode: 'class',
+  content: ['./src/**/*.{html,js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#6B21A8',
+        secondary: '#9333EA',
+        accent: '#8B5CF6',
+      },
+    },
   },
   plugins: [],
 };
