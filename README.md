@@ -24,10 +24,11 @@ This is a personal portfolio website for Ishwor Timalsina, showcasing skills, pr
 To run this project locally, follow these steps:
 
 1. Clone the Repository
-   git clone https://github.com/your-username/portfolio.git
+   git clone https://github.com/it-is-it/portfolio.git
 
 2. Navigate to the Project Directory
-   cd portfolio
+
+   # cd portfolio
 
 3. Open the `index.html` File
 
@@ -39,26 +40,8 @@ To run this project locally, follow these steps:
 
 The portfolio comes with a dark mode toggle, which allows you to switch between light and dark themes. The background, text, and other elements adjust accordingly for better readability.
 
-## Contributions
-
-Feel free to fork this repository and contribute by submitting issues or pull requests.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Contact
 
 For any inquiries, please contact Ishwor Timalsina via:
 
-- Email: your-email@example.com
-- LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
-- Messenger: [facebook.com/yourprofile](https://facebook.com/yourprofile)
-
-### Key Points:
-
-- This README provides an overview of the project, including features, installation instructions, and how to customize the portfolio.
-- It includes a clear structure for anyone who wants to contribute or use the project.
-- It highlights key tech stacks and provides easy-to-follow installation steps.
-
-Feel free to customize this template as needed!
+- Email: ishwortimalsina39@gmail.com
