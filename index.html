@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.png" type="image/png">
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <!-- Dark Mode Toggle Button -->
+  <div id="dark-mode-toggle" class="dark-mode-btn">
+    <span id="dark-mode-icon">🌙</span>
+  </div>
+
+  <!-- Scroll Buttons (Vertically Aligned) -->
+  <div id="scroll-buttons">
+    <button id="scroll-up">Scroll Up</button>
+    <button id="scroll-down">Scroll Down</button>
+  </div>
+
+  <!-- Sticky Navigation Icons (Horizontally Aligned) -->
+  <aside id="sticky-icons">
+    <a href="#home">🏠</a>
+    <a href="#about">🧑‍💻</a>
+    <a href="#portfolio">💼</a>
+    <a href="#contact">📧</a>
+  </aside>
+
+  <!-- Header Section (Introduction) -->
+  <section id="home">
+    <div class="intro-container">
+      <h1>Hello, I'm Ishwor Timalsina</h1>
+      <p>Welcome to my portfolio website. I'm a passionate developer who loves coding and building cool projects.</p>
+      <div class="buttons">
+        <a href="assets/resume.pdf" class="btn" target="_blank" rel="noopener noreferrer">Download CV</a>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section (Profile Picture with Cool Effect) -->
+  <section id="about">
+    <div class="about-container">
+      <div class="profile-pic-container">
+        <img src="assets/profile.jpg" alt="Ishwor Timalsina" class="profile-pic">
+      </div>
+      <div class="bio">
+        <h2>About Me</h2>
+        <p>I am a passionate developer with experience in web technologies and a focus on creating user-friendly,
+          responsive, and efficient applications.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>My Projects</h2>
+    <div class="portfolio-items">
+      <div class="portfolio-item">
+        <img src="assets/project.jpg" alt="Project 1">
+        <h3>Project 1</h3>
+        <a href="https://example.com" class="btn" target="_blank">Live Demo</a>
+      </div>
+      <div class="portfolio-item">
+        <img src="assets/project.jpg" alt="Project 2">
+        <h3>Project 2</h3>
+        <a href="https://example.com" class="btn" target="_blank">Live Demo</a>
+      </div>
+      <div class="portfolio-item">
+        <img src="assets/project.jpg" alt="Project 3">
+        <h3>Project 3</h3>
+        <a href="https://example.com" class="btn" target="_blank">Live Demo</a>
+      </div>
+      <div class="portfolio-item">
+        <img src="assets/project.jpg" alt="Project 4">
+        <h3>Project 4</h3>
+        <a href="https://example.com" class="btn" target="_blank">Live Demo</a>
+      </div>
+      <div class="portfolio-item">
+        <img src="assets/project.jpg" alt="Project 4">
+        <h3>Project 5</h3>
+        <a href="https://example.com" class="btn" target="_blank">Live Demo</a>
+      </div>
+      <div class="portfolio-item">
+        <img src="assets/project.jpg" alt="Project 4">
+        <h3>Project 6</h3>
+        <a href="https://example.com" class="btn" target="_blank">Live Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you’d like to get in touch, feel free to reach out through any of the following channels or send me a message
+      below!</p>
+    <ul>
+      <li><a href="mailto:your-email@example.com">Email</a></li>
+      <li><a href="https://www.messenger.com" target="_blank">Messenger</a></li>
+      <li><a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a></li>
+    </ul>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+      <a href="#home">Top</a>
+    </nav>
+    <p>© 2024 Ishwor Timalsina. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="index.js"></script>
+</body>
+
+</html>
