@@ -1,0 +1,108 @@
+footer {
+    background-color: var(--color-primary); /* Light mode background color */
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 7rem; /* Ensuring space from previous content */
+    position: relative;
+}
+
+footer a {
+    color: var(--color-bg); /* Light mode link color */
+}
+
+.footer_logo {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    display: inline-block;
+    color: var(--color-white); /* Default to white for dark mode */
+}
+
+/* Permalinks */
+.permalinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto 3rem;
+}
+
+/* Footer Socials */
+.footer_socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.footer_socials a {
+    background-color: var(--color-bg); /* Light mode social icons background */
+    color: var(--color-white);
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+    display: flex;
+    border: 1px solid transparent;
+}
+
+.footer_socials a:hover {
+    background: transparent;
+    color: var(--color-bg);
+    border-color: var(--color-bg);
+}
+
+/* Footer Copyright */
+.footer_copyright {
+    margin-bottom: 4rem;
+    color: var(--color-bg); /* Light mode text color */
+}
+
+/* Dark Mode Footer Styling */
+body.dark-mode footer {
+    background-color: #4a4242;
+    color:blueviolet;}
+
+body.dark-mode footer a {
+    color: var(--color-white); /* Dark mode link color */
+}
+
+body.dark-mode .footer_socials a {
+    background-color: var(--color-bg); /* Dark mode social icons background */
+    color: var(--color-white);
+}
+
+body.dark-mode .footer_socials a:hover {
+    background: transparent;
+    color: var(--color-bg-dark); /* Dark mode social icon hover color */
+    border-color: var(--color-bg-dark);
+}
+
+body.dark-mode .footer_copyright {
+    color: var(--color-light); /* Dark mode text color */
+}
+
+/* ========== MEDIA QUERIES (SMALL DEVICES)========== */
+@media screen and (max-width:600px) {
+    .permalinks {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .footer_socials {
+        margin-bottom: 2.6rem;
+    }
+
+    /* Additional separation for footer on smaller devices */
+    footer {
+        margin-top: 9rem; /* Increase the top margin for better separation */
+    }
+}
+
+/* Ensure logo text color adjusts when switching between themes */
+body.dark-mode .footer_logo {
+    color: var(--color-white); /* Dark mode: white text */
+}
+
+body:not(.dark-mode) .footer_logo {
+    color: var(--color-bg); /* Light mode: dark text */
+}

@@ -1,0 +1,127 @@
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header_container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+
+/* ========== CTA ==========  */
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+
+
+/* ========== Header Socials ========== */
+.header_socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.header_socials::after {
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* ========== Me ==========  */
+
+.me img {
+    height: 100%;
+    width: 100%;
+}
+
+.me {
+    background: linear-gradient(var(--color-primary), transparent);
+    height: 30rem;
+    width: 22rem;
+    position: absolute;
+    left: calc(50% - 9rem);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 1rem 5rem 9rem 4rem; /* Adjust padding if needed */
+}
+
+
+/* ========== Scroll Down ==========  */
+.scroll_down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
+
+    .header_socials,
+    .scroll_down {
+        display: none;
+    }
+
+    .me {
+        width: 18rem;
+        height: 24rem;
+        padding: 1rem 1.5rem 3rem 1.5rem; /* Adjust padding for small devices */
+    }
+}
+
+/* ========== MEDIA QUERIES (TABLETS/MEDIUM DEVICES) ========== */
+@media screen and (max-width: 768px) {
+    .me {
+        width: 18rem;
+        height: 24rem;
+        padding: 1rem 1.5rem 3rem 1.5rem; /* Adjust padding for tablets */
+    }
+}
+
+/* ========== MEDIA QUERIES (LARGE DEVICES 1100px to 1500px) ========== */
+@media screen and (min-width: 1100px) and (max-width: 1500px) {
+    .me {
+        width: 20rem; /* Adjust the width for larger devices */
+        height: 28rem; /* Adjust the height accordingly */
+        padding: 2rem 2.5rem 5rem 2rem; /* Adjust the padding values as needed */
+    }
+}
+
+/* ========== MEDIA QUERIES (LARGE DEVICES) ========== */
+@media screen and (min-width: 1200px) {
+    .me {
+        width: 25rem;
+        height: 35rem;
+        padding: 3rem 3rem 7rem 3rem; /* Adjust padding for larger devices */
+    }
+}
+
+/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 68vh;
+    }
+
+    .me {
+        width: 18rem;
+        height: 24rem;
+        padding: 1rem 1.5rem 3rem 1.5rem; /* Adjust padding for smaller devices */
+    }
+}
