@@ -1,6 +1,5 @@
 {
   "name": "my-portfolio",
-  "homepage": "https://it-is-it.github.io/my-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,18 +9,18 @@
     "@testing-library/user-event": "^13.5.0",
     "cross-env": "^7.0.3",
     "emailjs-com": "^3.2.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-icons": "^4.12.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
     "react-router-dom": "^6.8.0",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "5.0.1",
     "react-toastify": "^9.1.3",
     "swiper": "^9.3.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env CI=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -42,8 +41,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
