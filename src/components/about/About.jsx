@@ -22,7 +22,7 @@ function About() {
             <article className="about_card">
               <FaAward className="about_icon" />
               <h5>Experience</h5>
-              <small>2+ Years Working</small>
+              <small>Not yet Working</small>
             </article>
 
             {/* <article className="about_card">
@@ -38,12 +38,10 @@ function About() {
             </article>
           </div>
           <p>
-            I have a strong curiosity and creative mindset that drives me to
-            find innovative solutions and question the way things are done.
-            Passionate React developer skilled at creating polished and
-            effective web solutions. I am deeply committed to keeping up with
-            the latest advancements in the ever-changing React ecosystem and
-            continuously improving my skills.
+          I’m a web developer fueled by curiosity and creativity, currently mastering both JavaScript and Python. 
+          With a strong passion for React, I focus on building polished, user-friendly web applications. I constantly seek new challenges and 
+          strive to improve my skills while staying updated with the latest trends in the tech world. 
+          My goal is to create innovative solutions and continually grow as a developer in the ever-evolving tech landscape.
           </p>
 
           <a href="#contact" className="btn btn-primary">

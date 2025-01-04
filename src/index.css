@@ -58,10 +58,12 @@ h3,
 h4,
 h5 {
   font-weight: 500;
+  color: var(--color-white);
 }
 
 h1 {
   font-size: 2.5rem;
+  color: var(--color-white);
 }
 
 section {
@@ -155,7 +157,29 @@ body .btn {
   border-color: var(--color-primary);
 }
 
+.dark-mode-toggle {
+  position: fixed; /* Fix the position so it stays in view */
+  top: 20px; /* Distance from the top of the viewport */
+  right: 20px; /* Distance from the right of the viewport */
+  z-index: 999; /* Ensure it's above other content */
+  width: 50px; /* Adjust width for consistent size */
+  height: 50px; /* Adjust height for consistent size */
+  background-color: var(--color-primary); /* Match your theme */
+  color: var(--color-white); /* Icon color */
+  border: none;
+  border-radius: 50%; /* Circular button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  transition: var(--transition); /* Smooth transition for hover effects */
+}
 
+.dark-mode-toggle:hover {
+  background-color: var(--color-primary-dark); /* Darker hover effect */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
 
 
 /* ========== MEDIA QUERIES (MEDIUM DEVICES)========== */

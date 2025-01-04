@@ -29,17 +29,13 @@ function App() {
 
   return (
     <>
-      {/* Dark Mode Toggle Button with Sun and Moon Icons */}
+      {/* Dark Mode Toggle Button with Only Sun and Moon Icons */}
       <button
-        className="btn"
-        onClick={() => setDarkMode(prevMode => !prevMode)}
-        style={{ position: 'fixed', top: '20px', right: '20px' }}
-      >
-        {darkMode ? <FaMoon /> : <FaSun />} {/* Toggle between moon and sun icons */}
-        <span style={{ marginLeft: '8px' }}>
-          {darkMode ? 'Dark Mode' : 'Light Mode'} {/* Toggle between dark and light text */}
-        </span>
-      </button>
+  className="dark-mode-toggle"
+  onClick={() => setDarkMode((prevMode) => !prevMode)}
+>
+  {darkMode ? <FaMoon /> : <FaSun />} {/* Toggle between moon and sun */}
+</button>
       
       <Header />
       <Nav />
