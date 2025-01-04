@@ -1,2 +1,4 @@
 [build.environment]
 PYTHON_VERSION = "3.9"
+[build.environment]
+NODE_VERSION = "18"
