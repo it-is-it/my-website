@@ -9,7 +9,7 @@ import Footer from './components/footer/Footer';
 
 function App() {
   // Dark mode state (default is true for dark mode)
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   // Check for saved theme in localStorage
   useEffect(() => {
