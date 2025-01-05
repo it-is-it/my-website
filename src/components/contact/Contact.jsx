@@ -56,7 +56,7 @@ function Contact() {
           <article className="contact_option">
             <RiMessengerLine className="contact_option-icon" />
             <h4>Messenger</h4>
-            <h5>Prashant Khatiwada</h5>
+            <h5>Ishwor Timalsina</h5>
             <a
               href="https://m.me/it.ishwortimalsina"
               target="_blank"
