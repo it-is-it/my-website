@@ -76,7 +76,7 @@
 
 .about_contents p {
     margin: 2rem 0 2.6rem;
-    color: var(--color-light);
+    color: var(--color-whi);
 }
 
 /* ========== MEDIA QUERIES (MEDIUM DEVICES)========== */
@@ -96,6 +96,37 @@
     }
 }
 
+/* ========== DARK MODE STYLES ========== */
+
+body.dark-mode .about_container {
+    color: var(--color-white); /* Text color in dark mode */
+}
+
+body.dark-mode .about_me {
+    background: linear-gradient(45deg, transparent, var(--color-primary-dark), transparent);
+}
+
+body.dark-mode .about_me-image {
+    background: linear-gradient(35deg, rgba(77, 181, 255, 0.8), var(--color-primary-dark), rgba(77, 181, 255, 0.9));
+}
+
+body.dark-mode .about_card {
+    background: var(--color-bg-dark); /* Dark background for the about cards */
+    border: 1px solid var(--color-primary-dark); /* Dark mode border */
+}
+
+body.dark-mode .about_card:hover {
+    background: transparent;
+    border-color: var(--color-primary); /* Highlight on hover */
+}
+
+body.dark-mode .about_icon {
+    color: var(--color-primary-dark); /* Icon color in dark mode */
+}
+
+body.dark-mode .about_icon:hover {
+    color: var(--color-primary); /* Change icon color to primary on hover */
+}
 
 /* ========== MEDIA QUERIES (SMALL DEVICES)========== */
 @media screen and (max-width:600px) {

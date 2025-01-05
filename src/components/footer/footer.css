@@ -59,11 +59,11 @@ footer a {
 
 /* Dark Mode Footer Styling */
 body.dark-mode footer {
-    background-color: #4a4242;
+    background-color: #9c2aff;
     color:blueviolet;}
 
 body.dark-mode footer a {
-    color: var(--color-white); /* Dark mode link color */
+    color: var(--color-white);/* Dark mode link color */
 }
 
 body.dark-mode .footer_socials a {
@@ -74,6 +74,11 @@ body.dark-mode .footer_socials a {
 body.dark-mode .footer_socials a:hover {
     background: transparent;
     color: var(--color-bg-dark); /* Dark mode social icon hover color */
+    border-color: var(--color-bg-dark);
+}
+body.dark-mode  a:hover {
+    background: transparent;
+    color: var(--color-primary); /* Dark mode social icon hover color */
     border-color: var(--color-bg-dark);
 }
 

@@ -13,13 +13,9 @@
 
 .contact_option h5 {
     word-wrap: break-word;
-    /* Ensures long words or text breaks to the next line */
     word-break: break-all;
-    /* Breaks long words at any point */
     white-space: normal;
-    /* Allows text to wrap to the next line */
 }
-
 
 .contact_option {
     background: var(--color-bg-match);
@@ -65,6 +61,68 @@ textarea {
     color: var(--color-white);
 }
 
+.email-text {
+    word-wrap: break-word; /* Ensures text wraps when needed */
+    word-break: break-all;  /* Breaks long words at any point */
+  }
+  
+
+  .contact_form input,
+.contact_form textarea {
+  color: var(--color-white);
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid var(--color-primary); /* Green border */
+  margin-bottom: 1rem;
+}
+
+.contact_form button {
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  background-color: var(--color-primary); 
+  color: var(--color-bg-dark);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact_form button:hover {
+  background-color: var(--color-white);
+  color: var(--color-dark); /* Darker green on hover */
+}
+
+
+/* ========== DARK MODE STYLES ========== */
+
+body.dark-mode .contact_option {
+    color: var(--color-bg-dark); /* Dark mode background for contact options */
+    border-color: var(--color-primary-dark); /* Dark mode border color */
+}
+
+body.dark-mode .contact_option:hover {
+    background-color: var(--color-primary-dark); /* Dark mode hover background */
+    border-color: var(--color-primary-match); /* Dark mode hover border color */
+}
+
+
+
+body.dark-mode .contact_form input,
+body.dark-mode .contact_form textarea {
+  background-color: var(--color-bg-dark);
+  color: #fff;
+  border-color: var(--color-primary-dark);
+}
+
+body.dark-mode .contact_form button {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+}
+
+body.dark-mode .contact_form button:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-primary);
+  border-color: var(--color-dark);
+}
+
 
 /* ========== MEDIA QUERIES (MEDIUM DEVICES)========== */
 @media screen and (max-width:1024px) {
@@ -74,10 +132,8 @@ textarea {
     }
 }
 
-
 /* ========== MEDIA QUERIES (SMALL DEVICES)========== */
 @media screen and (max-width:600px) {
-
     .container.contact_container {
         width: var(--container-width-sm);
     }

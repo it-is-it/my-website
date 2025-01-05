@@ -44,7 +44,7 @@ function Contact() {
           <article className="contact_option">
             <MdOutlineEmail className="contact_option-icon" />
             <h4>Email</h4>
-            <h5 style={{ textWrap: "wrap" }}>ishwortimalsina39@gmail.com</h5>
+            <h5 className="email-text">ishwortimalsina39@gmail.com</h5>
             <a
               href="mailto:ishwortimalsina39@gmail.com"
               target="_blank"
@@ -80,7 +80,7 @@ function Contact() {
 
         </div>
         {/* END OF CONTACT OPTIONS  */}
-        <form ref={form} onSubmit={sendEmail}>
+        <form ref={form} onSubmit={sendEmail} className="contact_form">
           <input
             type="text"
             name="name"
