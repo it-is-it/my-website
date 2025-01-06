@@ -19,7 +19,10 @@ header {
     justify-content: center;
 }
 
-.cta a{
+.cta a .btn{
+    background-color: var(--color-primary);
+}
+.cta a .btn-primary{
     background-color: var(--color-primary);
 }
 
