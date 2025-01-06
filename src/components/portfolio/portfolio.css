@@ -49,6 +49,12 @@ body.dark-mode .portfolio_item:hover {
     border-color: var(--color-primary-dark); /* Dark mode border on hover */
 }
 
+body.dark-mode .portfolio_item-cta a:hover {
+    background: linear-gradient(35deg, rgba(77, 181, 255, 0.8), var(--color-primary-dark), rgba(77, 181, 255, 0.9)); /* Dark mode hover background */
+    border-color: var(--color-primary-dark);
+    color: var(--color-white); /* Dark mode border on hover */
+}
+
 /* Dark mode text color in portfolio items */
 body.dark-mode .portfolio_item h3 {
     color: var(--color-light); /* Light text color in dark mode */

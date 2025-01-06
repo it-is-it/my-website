@@ -19,6 +19,10 @@ header {
     justify-content: center;
 }
 
+.cta a{
+    background-color: var(--color-primary);
+}
+
 
 
 /* ========== Header Socials ========== */
@@ -40,22 +44,27 @@ header {
 
 /* ========== Me ==========  */
 
-.me img {
-    height: 100%;
-    width: 100%;
-}
-
 .me {
     background: linear-gradient(var(--color-primary), transparent);
-    height: 30rem;
+    height: 25rem;
     width: 22rem;
     position: absolute;
-    left: calc(50% - 9rem);
+    left: calc(50% - 11rem); /* Centering adjustment */
     margin-top: 4rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
-    padding: 1rem 5rem 9rem 4rem; /* Adjust padding if needed */
+    display: flex; /* Add Flexbox */
+    justify-content: center; /* Horizontal alignment */
+    align-items: center; /* Vertical alignment */
+    padding: 1rem; /* Adjust padding if necessary */
 }
+
+.me img {
+    max-height: 100%; /* Ensure the image stays within the container */
+    max-width: 100%;
+    object-fit: contain; /* Ensures the image scales proportionally */
+}
+
 
 
 /* ========== Scroll Down ==========  */
@@ -97,6 +106,11 @@ body.dark-mode .header_container .me{
   
   body.dark-mode .header_socials a:hover {
     color: var(--color-primary-dark);
+  }
+
+  body.dark-mode .cta a:hover {
+    background: linear-gradient(35deg, rgba(77, 181, 255, 0.8), var(--color-primary-dark), rgba(77, 181, 255, 0.9));
+    color: var(--color-white);
   }
   
 

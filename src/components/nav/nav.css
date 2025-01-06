@@ -47,7 +47,7 @@ nav {
   
   /* Active state in Dark Mode */
   body.dark-mode nav a.active {
-    background: var(--color-primary-dark); /* Dark mode active state */
+    background: linear-gradient(35deg, rgba(77, 181, 255, 0.8), var(--color-primary-dark), rgba(77, 181, 255, 0.9));
     color: var(--color-bg-dark); /* Dark mode active link color */
   }
   

@@ -177,7 +177,7 @@ body .btn {
 }
 
 .dark-mode-toggle:hover {
-  background-color: var(--color-primary-dark); /* Darker hover effect */
+  background: linear-gradient(35deg, rgba(77, 181, 255, 0.8), var(--color-primary-dark), rgba(77, 181, 255, 0.9));
   transform: translateY(-3px); /* Slight lift on hover */
 }
 

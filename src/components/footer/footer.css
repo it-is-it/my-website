@@ -59,7 +59,7 @@ footer a {
 
 /* Dark Mode Footer Styling */
 body.dark-mode footer {
-    background-color: #9c2aff;
+    background: linear-gradient(15deg, rgba(77, 181, 255, 0.8), var(--color-primary-dark), rgba(77, 181, 255, 0.9));;
     color:blueviolet;}
 
 body.dark-mode footer a {
@@ -67,7 +67,7 @@ body.dark-mode footer a {
 }
 
 body.dark-mode .footer_socials a {
-    background-color: var(--color-bg); /* Dark mode social icons background */
+    background-color: var(--color-primary); /* Dark mode social icons background */
     color: var(--color-white);
 }
 

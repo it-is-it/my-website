@@ -87,7 +87,7 @@ textarea {
 
 .contact_form button:hover {
   background-color: var(--color-white);
-  color: var(--color-dark); /* Darker green on hover */
+  color: var(--color-dark); 
 }
 
 
@@ -99,10 +99,9 @@ body.dark-mode .contact_option {
 }
 
 body.dark-mode .contact_option:hover {
-    background-color: var(--color-primary-dark); /* Dark mode hover background */
+    background: linear-gradient(35deg, rgba(77, 181, 255, 0.8), var(--color-primary-dark), rgba(77, 181, 255, 0.9)); /* Dark mode hover background */
     border-color: var(--color-primary-match); /* Dark mode hover border color */
 }
-
 
 
 body.dark-mode .contact_form input,
@@ -113,14 +112,15 @@ body.dark-mode .contact_form textarea {
 }
 
 body.dark-mode .contact_form button {
-  background-color: var(--color-primary-dark);
-  color: var(--color-white);
+  background-color: var(--color-primary);
+  color: var(--color-primary-dark);
+  border-color: var(--color-bg-match);
 }
 
 body.dark-mode .contact_form button:hover {
-  background-color: var(--color-primary-dark);
-  color: var(--color-primary);
-  border-color: var(--color-dark);
+  background: linear-gradient(5deg, rgba(77, 181, 255, 0.8), var(--color-primary-dark), rgba(77, 181, 255, 0.9));;
+  color: var(--color-white);
+  border-color: var(--color-primary);
 }
 
 

@@ -129,6 +129,11 @@ body.dark-mode .about_icon:hover {
     color: var(--color-primary); /* Change icon color to primary on hover */
 }
 
+body.dark-mode .about_contents a:hover {
+    background: linear-gradient(35deg, rgba(77, 181, 255, 0.8), var(--color-primary-dark), rgba(77, 181, 255, 0.9));
+    color: var(--color-white); /* Change icon color to primary on hover */
+}
+
 /* ========== MEDIA QUERIES (SMALL DEVICES)========== */
 @media screen and (max-width:600px) {
 
