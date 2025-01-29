@@ -10,7 +10,7 @@ const OtherProjects = () => {
                 {
                     data.map((element , index)=>{return(
                         <div className='circle' key={index}>
-                            <Link to={`/Projects/${element.id}`} >
+                            <Link to={`/Portfolio/${element.id}`} >
                             <img src={element.Image} alt="" />
                             </Link>
                         

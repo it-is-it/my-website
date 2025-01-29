@@ -37,7 +37,7 @@ function Portfolio() {
               <img src={Image} alt={title} />
               {/* Eye Icon Overlay */}
               <Link
-                to={`/projects/${id}`}
+                to={`/Portfolio/${id}`}
                 className="view-details-icon"
                 title="View Details"
               >

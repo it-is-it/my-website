@@ -3,9 +3,8 @@
     align-items: center;
     flex-direction: column;
     
-
-
 }
+
 .pt-128{
     padding: 0rem 5.625rem;
     padding-top:8rem;
@@ -60,10 +59,6 @@
     color: #fff9;
     margin: 2rem 0 2.6rem;
     line-height: 1.7;
-/*     display: flex;
-    align-items: start;
-    justify-content: flex-start;
-    flex-direction: column; */
 }
 
 .Details .child {
@@ -92,7 +87,6 @@
 .Details h4,
 .Details h3 {
     font-weight: 500;
-    /* color: #fff; */
 }
 
 .Details .btn {
@@ -104,7 +98,7 @@
     transition: all .4s ease;
     text-decoration: none;
     background: #4db5ff;
-    
+    margin-top: 10px;
 }
 
 
@@ -119,6 +113,10 @@
     border-color: #0000;
 }
 
+
+/* .Details .child {
+    justify-content: center;
+} */
 
 .Details .child a:hover {
     color: #4db5ff;
