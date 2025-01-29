@@ -7,7 +7,7 @@ import logo from "../../assets/logo.png";
 function Footer() {
   return (
     <footer className="main">
-      <a href="/" className="footer_logo">
+      <a href="#" className="footer_logo">
         <img src={logo} alt="logo" className="footer_logo_image" />
       </a>
       <div className="footer">

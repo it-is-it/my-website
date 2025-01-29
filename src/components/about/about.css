@@ -127,11 +127,18 @@ img {
 }
 
 .about_contents a {
-  margin: 2rem 0 2.6rem;
+  margin: 2rem 0 2rem;
   color: #2c2c6c;
   line-height: 1.9;
-  font-size: 1.125rem;
+  font-size: 1.5rem; /* Increased font size */
   border-radius: 5px;
+  padding: 1.2rem 2rem; /* Added padding to make the button larger */
+  text-align: center; /* Ensures the text is centered inside the button */
+  display: inline-block; /* Makes the link behave like a block-level element */
+  background-color: #4db5ff; /* Optional: Adding background color for better visibility */
+  color: white; /* Optional: Make the text white for contrast */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
 }
 
 /* For devices with width less than 400px */
@@ -156,6 +163,14 @@ img {
 
   .about_contents p {
     font-size: 1.2rem; /* Adjust the font size for small screens */
+  }
+  .about_contents a {
+    margin: 2rem 0 2rem;
+    color: #2c2c6c;
+    line-height: 1.9;
+    font-size: 1.2rem; 
+    border-radius: 7px;
+    padding: 1.2rem 2rem; 
   }
 
   .about_card {

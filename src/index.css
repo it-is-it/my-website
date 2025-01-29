@@ -104,7 +104,7 @@ h5 {
 
   .btn {
     padding: 0.5rem 1rem; /* Smaller button for small screens */
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   h1 {
@@ -123,45 +123,6 @@ h5 {
   .text-content {
     font-size: 1.4rem;
     padding: 0 0.5rem;
-  }
-}
-
-/* Extra Small Devices (< 480px) */
-@media screen and (max-width: 480px) {
-  html {
-    font-size: 8px; /* Smaller font size for smaller screens */
-  }
-
-  .container {
-    width: 90%; /* Adjusted width */
-    padding: 0 1rem;
-  }
-
-  header {
-    height: 60vh;
-    padding-top: 3rem;
-  }
-
-  section {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-  }
-
-  .btn {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-  }
-
-  .text-content {
-    font-size: 1.4rem;
   }
 }
 
