@@ -73,6 +73,18 @@ header {
   transform: scale(1.2);
 }
 
+.header_socials::after {
+  content: '';
+  display: block;
+  width: 2px;  /* Thickness of the line */
+  height: 30px; /* Adjust to match the desired height */
+  background-color: #4db5ff;  /* Color of the line */
+  position: absolute;
+  bottom: -30px;  /* Position the line below the social icons */
+  left: 50%;  /* Center it horizontally within .header_socials */
+  transform: translateX(-50%); /* Center the line horizontally */
+}
+
 .scroll_down {
   position: absolute;
   right: -3rem;
