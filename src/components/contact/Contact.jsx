@@ -14,14 +14,10 @@ function Contact() {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_6z8m6we",
-        // "service_dm3vq2o", //(prashant20600310@gmail.com)
-        "template_ljanetf",
-        // "template_218yy5n",
+        "service_tel1he2",
+        "template_cq2h1wl",
         form.current,
-        "tWtKYEDPBvF_bxa0G"
-        // form.current,
-        // "1GAhb9nuvEBc-gMfR"
+        "r0yJg7mHl2oc4iI3T"
       )
       .then(
         (result) => {
@@ -35,51 +31,49 @@ function Contact() {
   };
 
   return (
-    <section id="contact">
+    <section id="contact" className="contact space">
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
 
       <div className="container contact_container">
-        <div className="contact_options">
-          <article className="contact_option">
+        <div className="left">
+          <a
+            href="mailto:ishwortimalsina39@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+            className="contact_option"
+          >
             <MdOutlineEmail className="contact_option-icon" />
             <h4>Email</h4>
             <h5 className="email-text">ishwortimalsina39@gmail.com</h5>
-            <a
-              href="mailto:ishwortimalsina39@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Send a Message
-            </a>
-          </article>
-          <article className="contact_option">
+            <p>Send a Mail</p>
+          </a>
+
+          <a
+            href="https://m.me/it.ishwortimalsina"
+            target="_blank"
+            rel="noreferrer"
+            className="contact_option"
+          >
             <RiMessengerLine className="contact_option-icon" />
             <h4>Messenger</h4>
             <h5>Ishwor Timalsina</h5>
-            <a
-              href="https://m.me/it.ishwortimalsina"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Send a Message
-            </a>
-          </article>
-          <article className="contact_option">
-            <FaLinkedin className="contact_option-icon" /> 
+            <p>Send a Message</p>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/ishwortimalsina/"
+            target="_blank"
+            rel="noreferrer"
+            className="contact_option"
+          >
+            <FaLinkedin className="contact_option-icon" />
             <h4>LinkedIn</h4>
             <h5>Ishwor Timalsina</h5>
-            <a
-              href="https://www.linkedin.com/in/ishwortimalsina/" 
-              target="_blank"
-              rel="noreferrer"
-            >
-              Connect on LinkedIn
-            </a>
-</article>
-
+            <p>Connect on LinkedIn</p>
+          </a>
         </div>
-        {/* END OF CONTACT OPTIONS  */}
+
         <form ref={form} onSubmit={sendEmail} className="contact_form">
           <input
             type="text"

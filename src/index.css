@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -8,22 +7,25 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
 }
 
+/* Default (Light Mode) */
+body {
+  background-color: #e8f4fd;
+  color: hsl(240, 29%, 17%);
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+  background-color: #1f1f38;
+  color: #e8f4fd;
+}
+
+
 :root {
-  --color-bg: #1f1f38; /* Light background color */
-  --color-bg-dark: #212121; /* Dark background color */
-  --color-bg-match: #2c2c6c;
-  --color-primary: #4db5ff; /* Primary color */
-  --color-primary-dark: #9c2aff; /* Dark primary color */
-  --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.7); /* Lighter color for text */
-  --color-dark: #333; /* Darker text color for light mode */
-  --color-muted: rgba(255, 255, 255, 0.5); /* Muted color for secondary text */
-  --dark-background-gradient: linear-gradient(135deg, #3a0d62, #571e7a);
-
   --transition: all 400ms ease;
-
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
@@ -33,182 +35,284 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Body Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7;
+  transition: background-color 400ms ease, color 400ms ease;
+}
+
+/* Link Styles */
+a {
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+/* Scrollbar Style */
 ::-webkit-scrollbar {
   display: none;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background: var(--color-bg); /* Light background */
-  color: var(--color-dark); /* Dark text color */
-  line-height: 1.7;
-  background-image: url(../src/assets/bg-texture.png);
-  transition: background-color 400ms ease, color 400ms ease;
-}
 
-/* ========== GENERAL STYLES ==========  */
+/* Container */
 .container {
-  width: var(--container-width-lg);
   margin: 0 auto;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: 500;
-  color: var(--color-white);
-}
-
-h1 {
-  font-size: 2.5rem;
-  color: var(--color-white);
+  width: var(--container-width-lg); /* Default large width */
 }
 
 section {
   text-align: center;
-  margin-top: 5rem; /* Adequate space between sections */
-  padding: 5rem 0; /* Padding for sections to separate them clearly */
+  margin-top: 2rem;
+  padding: 3rem 0 0 0;
   transition: background-color 400ms ease, color 400ms ease;
   position: relative;
 }
 
 section > h2 {
-  color: var(--color-primary);
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
-.text-light {
-  color: var(--color-light);
-}
-
-a {
-  color: var(--color-primary);
-  transition: var(--transition);
-}
-
-a:hover {
-  color: var(--color-white);
-}
-
-.btn {
-  width: max-content;
-  display: inline-block;
-  color: var(--color-primary);
-  padding: 0.75rem 1.2rem;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  border: 1px solid var(--color-primary);
-  transition: var(--transition);
-}
-
-.btn:hover {
-  background: var(--color-white);
-  color: var(--color-bg);
-  border-color: transparent;
-}
-
-.btn-primary {
-  background: var(--color-primary);
-  color: var(--color-bg);
-}
-
-img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
-}
-
-header {
-  height: 100vh;
-  padding-top: 7rem;
-  overflow: hidden;
-}
-
-/* Dark mode variables */
-
-body.dark-mode {
-  background: var(--color-bg-dark); /*Dark background for dark mode*/
-  color: var(--color-white); /* White text for dark mode */
-}
-body.dark-mode footer {
-  background-color: --color-bg-match; /* Replace with your desired color */
-}
-
-body.dark-mode .btn {
-  color: var(--color-primary-dark);
-}
-
-body.dark-mode section {
-  background-color: var(--color-bg-dark);
-}
-
-body.dark-mode a:hover {
-  color: var(--color-primary-dark);
-}
-
-/* ========== BUTTON STYLING FOR LIGHT/DARK MODE ========== */
-body.dark-mode .btn {
-  border-color: var(--color-primary-dark);
-}
-
-body .btn {
-  border-color: var(--color-primary);
-}
-
-.dark-mode-toggle {
-  position: fixed; /* Fix the position so it stays in view */
-  top: 20px; /* Distance from the top of the viewport */
-  right: 20px; /* Distance from the right of the viewport */
-  z-index: 999; /* Ensure it's above other content */
-  width: 50px; /* Adjust width for consistent size */
-  height: 50px; /* Adjust height for consistent size */
-  background-color: var(--color-primary); /* Match your theme */
-  color: var(--color-white); /* Icon color */
-  border: none;
-  border-radius: 50%; /* Circular button */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
-  transition: var(--transition); /* Smooth transition for hover effects */
-}
-
-.dark-mode-toggle:hover {
-  background: linear-gradient(35deg, rgba(77, 181, 255, 0.8), var(--color-primary-dark), rgba(77, 181, 255, 0.9));
-  transform: translateY(-3px); /* Slight lift on hover */
+/* Heading Styles */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
 }
 
 
-/* ========== MEDIA QUERIES (MEDIUM DEVICES)========== */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 8px; /* Decreases font size for smaller screens */
+  }
+
   .container {
-    width: var(--container-width-md);
+    width: 90%; /* Make container width more fluid */
+    padding: 0 1rem;
   }
 
   header {
-    height: 80vh; /* Adjust the height to be more flexible for medium screens */
+    height: 60vh; /* Shorten header for small screens */
+    padding-top: 3rem;
+  }
+
+  section {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem; /* Smaller button for small screens */
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem; /* Decrease h1 font size */
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  img {
+    object-fit: cover;
+    height: auto;
+  }
+
+  .text-content {
+    font-size: 1.4rem;
+    padding: 0 0.5rem;
+  }
+}
+
+/* Extra Small Devices (< 480px) */
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 8px; /* Smaller font size for smaller screens */
+  }
+
+  .container {
+    width: 90%; /* Adjusted width */
+    padding: 0 1rem;
+  }
+
+  header {
+    height: 60vh;
+    padding-top: 3rem;
+  }
+
+  section {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .text-content {
+    font-size: 1.4rem;
+  }
+}
+
+/* Small Devices (481px to 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+
+  .container {
+    width: 85%; /* Adjusted width */
+    padding: 0 1.5rem;
+  }
+
+  header {
+    height: 70vh;
+    padding-top: 4rem;
+  }
+
+  section {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .btn {
+    padding: 0.75rem 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .text-content {
+    font-size: 1.5rem;
+  }
+}
+
+/* Medium Devices (769px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: 10px;
+  }
+
+  .container {
+    width: 80%;
+    padding: 0 2rem;
+  }
+
+  header {
+    height: 80vh;
+    padding-top: 5rem;
+  }
+
+  section {
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+  }
+
+  .btn {
+    padding: 1rem 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  .text-content {
+    font-size: 1.6rem;
+  }
+}
+
+/* Large Devices (1025px to 1200px) */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  html {
+    font-size: 11px;
+  }
+
+  .container {
+    width: 75%;
+    padding: 0 3rem;
+  }
+
+  header {
+    height: 90vh;
+    padding-top: 6rem;
   }
 
   section {
     margin-top: 6rem;
-    height: auto;
+    margin-bottom: 5rem;
+  }
+
+  .btn {
+    padding: 1.2rem 2.5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .text-content {
+    font-size: 1.8rem;
   }
 }
 
-/* ========== MEDIA QUERIES (SMALL DEVICES)========== */
-@media screen and (max-width: 600px) {
+/* Extra Large Devices (> 1200px) */
+@media screen and (min-width: 1201px) {
+  html {
+    font-size: 12px;
+  }
+
   .container {
-    width: var(--container-width-sm);
+    width: 80%; /* Adjusted width */
+    padding: 0 4rem;
   }
 
   header {
-    height: 70vh; /* Make the header shorter for very small screens */
+    height: 100vh;
+    padding-top: 8rem;
   }
 
   section {
-    margin-bottom: 2rem;
+    margin-top: 7rem;
+    margin-bottom: 6rem;
+  }
+
+  .btn {
+    padding: 1.5rem 3rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .text-content {
+    font-size: 2rem;
   }
 }

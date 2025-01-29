@@ -1,90 +1,92 @@
-import React from "react";
+import React, { useState } from "react";
 import "./portfolio.css";
-import WP from "../../assets/portfolio/wealthPandit.png";
-import YTClone from "../../assets/portfolio/youtube_clone.png";
-import PRB from "../../assets/portfolio/pacific.png";
-import movie from "../../assets/portfolio/movie.png";
-import Abroad from "../../assets/portfolio/abroadInstitute.png";
-import kumari from "../../assets/portfolio/kumari.png";
-
-const data = [
-  {
-    id: 1,
-    Image: Abroad,
-    title: "Abroad Institute",
-    demo: "http://abroadinst.com",
-  },
-  {
-    id: 2,
-    Image: PRB,
-    title: "Pacific Regional Bank",
-    demo: "https://pacificbank.peacenepal.com",
-  },
-  {
-    id: 3,
-    Image: WP,
-    title: "Wealth Pandit",
-    demo: "https://uat.wealthpandit.com",
-  },
-  {
-    id: 4,
-    Image: kumari,
-    title: "Kumari Bank",
-    demo: "https://www.kumaribank.com/en",
-  },
-  {
-    id: 5,
-    Image: YTClone,
-    title: "Youtube Clone",
-    github: "https://github.com/Prashant8Khatiwada/youtube-app",
-    demo: "https://p-youtube-clone.netlify.app",
-  },
-  {
-    id: 6,
-    Image: movie,
-    title: "Movie App",
-    github: "git@github.com:Prashant8Khatiwada/movie.git",
-    demo: "https://web-movie-app.netlify.app/",
-  },
-];
+import { FaGithub, FaEye } from "react-icons/fa";
+import { data } from "../data";
+import { Link } from "react-router-dom";
 
 function Portfolio() {
+  const [currentPage, setCurrentPage] = useState(0);
+  const itemsPerPage = 6;
+
+  const nextPage = () => {
+    if ((currentPage + 1) * itemsPerPage < data.length) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+  const prevPage = () => {
+    if (currentPage > 0) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
+  const currentItems = data.slice(
+    currentPage * itemsPerPage,
+    (currentPage + 1) * itemsPerPage
+  );
+
   return (
     <section id="portfolio">
-      <h5>My recent Work</h5>
+      <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
 
       <div className="container portfolio_container">
-        {data.map(({ id, Image, title, github, demo }) => {
-          return (
-            <article key={id} className="portfolio_item">
-              <div className="portfolio_item-image">
-                <img src={Image} alt="" />{" "}
-              </div>
-              <h3>{title}</h3>
-              <div className="portfolio_item-cta">
-                {github && (
-                  <a
-                    href={github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="btn"
-                  >
-                    Github
-                  </a>
-                )}
+        {currentItems.map(({ id, Image, title, github, demo }) => (
+          <article key={id} className="portfolio_item">
+            <div className="portfolio_item-image">
+              <img src={Image} alt={title} />
+              {/* Eye Icon Overlay */}
+              <Link
+                to={`/projects/${id}`}
+                className="view-details-icon"
+                title="View Details"
+              >
+                <FaEye size={30} />
+              </Link>
+            </div>
+            <h3>{title}</h3>
+            <div className="portfolio_item-cta">
+              {github && (
                 <a
-                  href={demo}
+                  href={github}
                   target="_blank"
                   rel="noreferrer"
-                  className="btn btn-primary"
+                  className="btn"
+                  title="Github"
                 >
-                  Live Demo
+                  <FaGithub size={24} />
                 </a>
-              </div>
-            </article>
-          );
-        })}
+              )}
+              <a
+                href={demo}
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-primary"
+                title="Live Demo"
+              >
+                Live Demo
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      {/* Pagination Controls */}
+      <div className="pagination-controls">
+        <button
+          onClick={prevPage}
+          disabled={currentPage === 0}
+          aria-label="Previous Page"
+        >
+          Prev
+        </button>
+        <button
+          onClick={nextPage}
+          disabled={(currentPage + 1) * itemsPerPage >= data.length}
+          aria-label="Next Page"
+        >
+          Next
+        </button>
       </div>
     </section>
   );

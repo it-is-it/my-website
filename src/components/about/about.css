@@ -1,158 +1,242 @@
 #about {
-    text-align: center;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: bold;
+  color: #4db5ff;
+}
+
+h6 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: gray;
+  line-height: 1.7;
+}
+
+small {
+  color: gray;
 }
 
 .about_container {
-    display: grid;
-    grid-template-columns: 35% 50%;
-    gap: 15%;
-    color: var(--color-white)
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
+  color: #fff;
+  margin: 0 auto;
 }
 
+.about_container h5 {
+  margin-bottom: 4rem;
+  color: #4db5ff;
+  font-weight: 500;
+  line-height: 1.7;
+  font-size: 2.25rem;
+}
 
-/* ========== About ME =========  */
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
 .about_me {
-    aspect-ratio: 3/4;
-    border-radius: 2rem;
-    background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
-    display: grid;
-    place-items: center;
+  aspect-ratio: 3/4;
+  border-radius: 2rem;
+  background: linear-gradient(45deg, transparent, #4db5ff, transparent);
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: auto;
 }
 
 .about_me img {
-    aspect-ratio: 3/4;
+  aspect-ratio: 3/4;
+  max-width: 100%;
+  height: auto;
 }
 
 .about_me-image {
-    border-radius: 2rem;
-    overflow: hidden;
-    transform: rotate(10deg);
-    background: linear-gradient(35deg, rgba(77, 181, 255, 0.8), var(--color-primary), rgba(77, 181, 255, 0.9));
-    transition: var(--transition);
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(10deg);
+  background: linear-gradient(45deg, #4db5ff, #4db5ff, #4db5ff);
+  transition: transform 0.4s ease-in-out;
+  width: 100%;
+  height: auto;
 }
 
 .about_me-image:hover {
-    transform: rotate(0deg);
-}
-
-
-/* ========== About Cards ==========  */
-.about_cards {
-    justify-content: center;
-    display: flex;
-    /* grid-template-columns: repeat(3, 1fr); */
-    gap: 2rem;
+  transform: rotate(0deg);
 }
 
 .about_card {
-    background: var(--color-bg-match);
-    border: 1px solid transparent;
-    border-radius: 1rem;
-    padding: 2rem;
-    text-align: center;
-    transition: var(--transition);
+  background: #2c2c6c;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 
-.about_card:hover {
-    background: transparent;
-    border-color: var(--color-primary-match);
-    cursor: default;
-}
-
-.about_icon {
-    color: var(--color-primary);
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-
+.about_cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .about_card h5 {
-    font-size: 0.95rem;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
 }
 
 .about_card small {
-    font-size: 0.7rem;
-    color: var(--color-light);
+  font-size: 0.875rem;
+  color: gray;
 }
 
+.about_card:hover {
+  background: transparent;
+  border-color: #4db5ff;
+  color: #1f1f38;
+  cursor: default;
+}
+
+.about_icon {
+  color: #4db5ff;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+/* Light Mode (default) */
 .about_contents p {
-    margin: 2rem 0 2.6rem;
-    color: var(--color-whi);
+  margin: 3rem 0 2.6rem;
+  color: #1f1f38; /* Default color for light mode */
+  line-height: 1.9;
+  font-size: 10rem;
+  font-weight: 500;
 }
 
-/* ========== MEDIA QUERIES (MEDIUM DEVICES)========== */
-@media screen and (max-width:1024px) {
-    .about_container {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-
-    .about_me {
-        width: 50%;
-        margin: 2rem auto 4rem;
-    }
-
-    .about_contents p {
-        margin: 1rem 0 1.5rem;
-    }
+/* Dark Mode */
+[data-theme="dark"] .about_contents p {
+  color: #e8f4fd; /* Adjusted color for dark mode */
 }
 
-/* ========== DARK MODE STYLES ========== */
-
-body.dark-mode .about_container {
-    color: var(--color-white); /* Text color in dark mode */
+.about_contents a {
+  margin: 2rem 0 2.6rem;
+  color: #2c2c6c;
+  line-height: 1.9;
+  font-size: 1.125rem;
+  border-radius: 5px;
 }
 
-body.dark-mode .about_me {
-    background: linear-gradient(45deg, transparent, var(--color-primary-dark), transparent);
+/* For devices with width less than 400px */
+@media screen and (max-width: 399px) {
+  .about_container {
+    display: flex; /* Switch to flexbox for better control */
+    flex-direction: column; /* Stack elements vertically */
+    gap: 1rem; /* Reduce the gap between elements */
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .about_me {
+    width: 80%; /* Ensure the image is responsive and doesn't overflow */
+    margin: 0 auto; /* Center the content */
+  }
+
+  .about_contents {
+    width: 90%; /* Ensure the content doesn't overflow */
+    margin: 0 auto; /* Center the content */
+  }
+
+  .about_contents p {
+    font-size: 1.2rem; /* Adjust the font size for small screens */
+  }
+
+  .about_card {
+    width: 100%; /* Make the cards take full width on smaller screens */
+    margin-bottom: 1rem; /* Add some margin between the cards */
+  }
+
+  .about_cards {
+    flex-direction: column; /* Stack the cards vertically */
+    gap: 1rem; /* Reduce the gap between cards */
+  }
 }
 
-body.dark-mode .about_me-image {
-    background: linear-gradient(35deg, rgba(77, 181, 255, 0.8), var(--color-primary-dark), rgba(77, 181, 255, 0.9));
+/* Mobile View (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .about_container {
+    grid-template-columns: 1fr; /* Stack elements in one column */
+    gap: 2rem;
+  }
+
+  .about_me {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .about_me img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about_contents p {
+    font-size: 2rem;
+  }
+
+  .about_card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }
 
-body.dark-mode .about_card {
-    background: var(--color-bg-dark); /* Dark background for the about cards */
-    border: 1px solid var(--color-primary-dark); /* Dark mode border */
+/* Tablet View (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  .about_container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .about_me {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .about_contents p {
+    font-size: 1.4rem;
+  }
 }
 
-body.dark-mode .about_card:hover {
-    background: transparent;
-    border-color: var(--color-primary); /* Highlight on hover */
+/* Desktop View (min-width: 1100px) */
+@media screen and (min-width: 1100px) {
+  .about_container {
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+  }
+
+  .about_me {
+    width: 100%;
+  }
+
+  .about_contents p {
+    font-size: 1.125rem;
+  }
 }
 
-body.dark-mode .about_icon {
-    color: var(--color-primary-dark); /* Icon color in dark mode */
-}
+/* Large Desktop View (min-width: 1200px) */
+@media screen and (min-width: 1200px) {
+  .about_container {
+    grid-template-columns: 35% 50%;
+    gap: 20%;
+  }
 
-body.dark-mode .about_icon:hover {
-    color: var(--color-primary); /* Change icon color to primary on hover */
-}
-
-body.dark-mode .about_contents a:hover {
-    background: linear-gradient(35deg, rgba(77, 181, 255, 0.8), var(--color-primary-dark), rgba(77, 181, 255, 0.9));
-    color: var(--color-white); /* Change icon color to primary on hover */
-}
-
-/* ========== MEDIA QUERIES (SMALL DEVICES)========== */
-@media screen and (max-width:600px) {
-
-    .about_me {
-        width: 65%;
-        margin: 0 auto 3rem;
-    }
-
-    .about_cards {
-        /* grid-template-columns: 1fr 1fr;
-        gap: 1rem; */
-        flex-direction: column;
-    }
-
-    .about_contents {
-        text-align: center;
-    }
-
-    .about_contents p {
-        margin: 1.5rem 0;
-    }
+  .about_me {
+    width: 100%;
+  }
 }

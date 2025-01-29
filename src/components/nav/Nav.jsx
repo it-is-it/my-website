@@ -1,15 +1,18 @@
 import { useState } from "react";
 import "./nav.css";
-import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
-import { BiMessageSquareDetail } from "react-icons/bi";
-import { IoGitNetworkSharp } from "react-icons/io5";
+import { AiFillHome, AiOutlineMail } from "react-icons/ai"; // Updated Home and Contact Icons
+import { FaUserAlt, FaCode, FaSuitcase, FaAddressBook } from "react-icons/fa"; 
 
 function Nav() {
   const [activeNav, setActiveNav] = useState("#");
 
-  const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-    setActiveNav("#");
+  // Function for scrolling to a section
+  const handleScroll = (section) => {
+    const target = document.querySelector(section);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+      setActiveNav(section);
+    }
   };
 
   return (
@@ -19,38 +22,59 @@ function Nav() {
         href="#"
         onClick={(e) => {
           e.preventDefault();
-          handleScrollToTop();
+          handleScroll("#home");
         }}
-        className={activeNav === "#" ? "active" : ""}
+        className={activeNav === "#home" ? "active" : ""}
       >
-        <AiOutlineHome />
+        <AiFillHome />
       </a>
 
       {/* About Section */}
       <a
         href="#about"
-        onClick={() => setActiveNav("#about")}
+        onClick={(e) => {
+          e.preventDefault();
+          handleScroll("#about");
+        }}
         className={activeNav === "#about" ? "active" : ""}
       >
-        <AiOutlineUser />
+        <FaUserAlt />
+      </a>
+
+      {/* Skills Section */}
+      <a
+        href="#skills"
+        onClick={(e) => {
+          e.preventDefault();
+          handleScroll("#skills");
+        }}
+        className={activeNav === "#skills" ? "active" : ""}
+      >
+        <FaCode />
       </a>
 
       {/* Portfolio Section */}
       <a
         href="#portfolio"
-        onClick={() => setActiveNav("#portfolio")}
+        onClick={(e) => {
+          e.preventDefault();
+          handleScroll("#portfolio");
+        }}
         className={activeNav === "#portfolio" ? "active" : ""}
       >
-        <IoGitNetworkSharp />
+        <FaSuitcase />
       </a>
 
       {/* Contact Section */}
       <a
         href="#contact"
-        onClick={() => setActiveNav("#contact")}
+        onClick={(e) => {
+          e.preventDefault();
+          handleScroll("#contact");
+        }}
         className={activeNav === "#contact" ? "active" : ""}
       >
-        <BiMessageSquareDetail />
+        <FaAddressBook />
       </a>
     </nav>
   );

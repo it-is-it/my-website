@@ -1,0 +1,23 @@
+.darkModeToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  background-color: #6cace4; 
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.darkModeToggle:hover {
+  transform: translateY(-2px);
+  background-color: transparent; /* Lighter gray for contrast on hover */
+  border: 1px solid #777;
+}

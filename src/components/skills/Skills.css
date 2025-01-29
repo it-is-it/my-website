@@ -1,0 +1,100 @@
+/* Skills Section */
+.skills {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Section Headings */
+.skills h5 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: gray;
+  line-height: 1.7;
+}
+
+.skills h2 {
+  margin-bottom: 3rem;
+  color: #4db5ff;
+  font-weight: 500;
+  line-height: 1.7;
+  font-size: 2.25rem;
+}
+
+/* Skills Container */
+.skills .container {
+  width: 100%;
+  max-width: 1200px; /* Prevents stretching */
+  background: #2c2c6c;
+  border-radius: 2rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+  margin: 0 auto;
+}
+
+/* Skill Item */
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.skill-item:hover {
+  transform: scale(1.1);
+}
+
+.skills .container:hover {
+  background: transparent;
+  border: 1px solid #4db5ff;
+  color: #2c2c6c;
+}
+
+/* Icon Styling */
+.icon {
+  font-size: 2rem; /* Larger icons */
+  color: #4db5ff;
+}
+
+/* Skill Text */
+.skill-item h4 {
+  font-weight: 500;
+  color: #fff;
+  font-size: 1.125rem;
+}
+.container:hover h4 {
+  font-weight: 500;
+  color: #4db5ff;
+  font-size: 1.125rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .skills .container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .skills .container {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .skills h2 {
+    font-size: 1.8rem;
+  }
+
+  .skill-item h4 {
+    font-size: 1rem;
+  }
+}

@@ -1,113 +1,108 @@
-footer {
-    background-color: var(--color-primary); /* Light mode background color */
-    padding: 3rem 0;
-    text-align: center;
-    font-size: 0.9rem;
-    margin-top: 7rem; /* Ensuring space from previous content */
-    position: relative;
+.footer {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center; /* Center text */
 }
 
-footer a {
-    color: var(--color-bg); /* Light mode link color */
+.main {
+  justify-content: center; /* Center content */
+  align-items: center;
+  flex-wrap: wrap;
+  background: #2c2c6c;
+  padding: 20px;
+  padding-bottom: 100px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer_logo {
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 2rem;
-    display: inline-block;
-    color: var(--color-white); /* Default to white for dark mode */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0; /* Added margin for spacing */
+  width: 100%;
 }
 
-/* Permalinks */
-.permalinks {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin: 0 auto 3rem;
+.footer_logo img {
+  width: 200px;
+  height: auto;
 }
 
-/* Footer Socials */
-.footer_socials {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 4rem;
+.footer p {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0;
+  margin-bottom: 15px; /* Added margin for spacing */
 }
 
-.footer_socials a {
-    background-color: var(--color-bg); /* Light mode social icons background */
-    color: var(--color-white);
-    padding: 0.8rem;
-    border-radius: 0.7rem;
-    display: flex;
-    border: 1px solid transparent;
+.footer .social {
+  display: flex;
+  justify-content: center; /* Center social icons */
+  align-items: center;
+  width: auto; /* Ensure social icons don't stretch */
+  gap: 20px; /* Space the social icons out a bit */
 }
 
-.footer_socials a:hover {
-    background: transparent;
-    color: var(--color-bg);
-    border-color: var(--color-bg);
+.footer .social a {
+  color: #fff9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  background: transparent;
+  border-radius: 50%;
+  font-size: 2rem;
+  margin: 0;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
-/* Footer Copyright */
+.footer .social a:hover {
+  background: #fff9;
+  transform: scale(1.2);
+  border: 2px solid #4db5ff;
+}
+
 .footer_copyright {
-    margin-bottom: 4rem;
-    color: var(--color-bg); /* Light mode text color */
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
 }
 
-/* Dark Mode Footer Styling */
-body.dark-mode footer {
-    background: linear-gradient(15deg, rgba(77, 181, 255, 0.8), var(--color-primary-dark), rgba(77, 181, 255, 0.9));;
-    color:blueviolet;}
-
-body.dark-mode footer a {
-    color: var(--color-white);/* Dark mode link color */
+.footer_copyright small {
+  color: #fff9;
+  font-size: 1.2rem;
 }
 
-body.dark-mode .footer_socials a {
-    background-color: var(--color-primary); /* Dark mode social icons background */
-    color: var(--color-white);
-}
+@media screen and (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+  }
 
-body.dark-mode .footer_socials a:hover {
-    background: transparent;
-    color: var(--color-bg-dark); /* Dark mode social icon hover color */
-    border-color: var(--color-bg-dark);
-}
-body.dark-mode  a:hover {
-    background: transparent;
-    color: var(--color-primary); /* Dark mode social icon hover color */
-    border-color: var(--color-bg-dark);
-}
+  .footer .social {
+    width: 100%; /* Make sure the container uses full available width */
+    justify-content: center;
+    gap: 10px; /* Reduced gap between icons */
+    margin-top: 20px;
+  }
 
-body.dark-mode .footer_copyright {
-    color: var(--color-light); /* Dark mode text color */
-}
+  .footer p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
 
-/* ========== MEDIA QUERIES (SMALL DEVICES)========== */
-@media screen and (max-width:600px) {
-    .permalinks {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
+  .footer_logo img {
+    width: 150px;
+  }
 
-    .footer_socials {
-        margin-bottom: 2.6rem;
-    }
-
-    /* Additional separation for footer on smaller devices */
-    footer {
-        margin-top: 9rem; /* Increase the top margin for better separation */
-    }
-}
-
-/* Ensure logo text color adjusts when switching between themes */
-body.dark-mode .footer_logo {
-    color: var(--color-white); /* Dark mode: white text */
-}
-
-body:not(.dark-mode) .footer_logo {
-    color: var(--color-bg); /* Light mode: dark text */
+  .footer .social a {
+    margin: 0 10px; /* Reduced margin between icons */
+  }
 }

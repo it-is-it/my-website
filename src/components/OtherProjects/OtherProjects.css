@@ -1,0 +1,94 @@
+.OtherProjects {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the content */
+    margin: 5rem; /* Add spacing above */
+}
+
+.OtherProjects h2 {
+    margin-bottom: 3rem;
+    color: #4db5ff;
+    font-weight: 500;
+    line-height: 1.7;
+    font-size: 2.5rem; /* Adjust font size for larger screens */
+    text-align: center; /* Center the title */
+}
+
+.OtherProjects .portfolio-container {
+    display: grid;
+    grid-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr)); /* Responsive grid columns */
+    justify-content: center;
+    width: 100%;
+    padding: 0 2rem; /* Add padding to container for spacing */
+}
+
+.OtherProjects .circle {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* This will keep the aspect ratio 1:1 to ensure circle shape */
+    border-radius: 50%;
+    overflow: hidden; /* Ensure content stays within the circle */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.3s ease;
+}
+
+.OtherProjects .circle img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure image fills the circle proportionally */
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.OtherProjects .circle:hover {
+    transform: scale(1.05); /* Zoom in on hover */
+}
+
+.OtherProjects .circle:hover img {
+    transform: scale(1.1); /* Zoom in the image on hover */
+}
+
+/* ========== MEDIA QUERIES (SMALLER SCREENS) ========== */
+@media screen and (max-width: 1024px) {
+    .OtherProjects h2 {
+        font-size: 2rem; /* Adjust font size for tablets */
+    }
+
+    .OtherProjects .portfolio-container {
+        grid-template-columns: repeat(4, 1fr); /* Show 2 items per row on medium screens */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .OtherProjects h2 {
+        font-size: 1.8rem; /* Smaller font size for small devices */
+    }
+
+    .OtherProjects .portfolio-container {
+        grid-template-columns: repeat(3, 1fr); /* Single column on small screens */
+        grid-gap: 1.5rem; /* Reduce gap on smaller screens */
+    }
+
+    .OtherProjects .circle {
+        padding-top: 100%; /* Keep circles 1:1 aspect ratio */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .OtherProjects h2 {
+        font-size: 1.6rem; /* Even smaller font size for extra small screens */
+    }
+
+    .OtherProjects .portfolio-container {
+        grid-template-columns: repeat(2, 1fr); /* Stack items in one column */
+        grid-gap: 1rem; /* Even smaller gap on small screens */
+    }
+
+    .OtherProjects .circle {
+        padding-top: 100%; /* Keep the circular aspect ratio */
+    }
+}
