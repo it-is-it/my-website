@@ -72,8 +72,10 @@ header {
 }
 
 .header_socials a:hover {
-  color: white;
-  transform: scale(1.2);
+  color: gray;
+  border: 1px solid #4db5ff;
+  border-radius: 50%;
+  transform: scale(1.1);
 }
 
 .header_socials::after {
@@ -93,8 +95,8 @@ header {
   right: -3rem;
   top: 50%;
   transform: translateY(-50%) rotate(90deg);
-  font-weight: 300;
-  font-size: 1rem;
+  font-weight: 500;
+  font-size: 1.4rem;
   color: #4db5ff;
   cursor: pointer;
   transition: color 0.3s ease, transform 0.3s ease;
