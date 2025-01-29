@@ -1,7 +1,7 @@
 import "./DetailsProjects.css";
 import { useParams, Link } from "react-router-dom";
 import { data } from "../data";
-import Footer from "../Footer/Footer";
+import Footer from "../footer/Footer";
 import { useTheme } from "../ThemeProvider";
 import OtherProjects from "../OtherProjects/OtherProjects";
 
@@ -56,7 +56,7 @@ const DetailsProjects = () => {
                   </svg>
                   <h4>{element}</h4>
                 </div>
-              ))}
+              ))} 
               <a href={card.demo} className="btn btn-primary">
                 Live Demo
               </a>

@@ -114,9 +114,9 @@
 }
 
 
-/* .Details .child {
+.Details .child {
     justify-content: center;
-} */
+}
 
 .Details .child a:hover {
     color: #4db5ff;
