@@ -5,13 +5,13 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': '/src', // Example alias for easier imports
+      '@': '/src', 
     },
   },
   server: {
-    port: 3000, // Change the default port if needed
+    port: 3000, 
   },
   build: {
-    outDir: 'dist', // Customize the output directory
+    outDir: 'build', 
   },
 });
