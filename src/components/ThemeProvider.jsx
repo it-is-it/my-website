@@ -3,15 +3,10 @@ import { createContext, useContext, useEffect, useState } from "react";
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  // Check system preference for dark mode
-  const systemPrefersDark = window.matchMedia(
-    "(prefers-color-scheme: dark)"
-  ).matches;
-
-  // Initialize theme state from localStorage or system preference
+// Initialize theme state from localStorage or system preference
   const storedTheme = localStorage.getItem("theme");
   const [darkMode, setDarkMode] = useState(
-    storedTheme ? storedTheme === "dark" : systemPrefersDark
+    storedTheme ? storedTheme === "dark" : false
   );
 
   // Apply theme to the document and sync to localStorage
