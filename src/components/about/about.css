@@ -135,7 +135,7 @@ img {
 }
 
 /* For devices with width less than 400px */
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 668px) {
   .about_container {
     display: flex; /* Switch to flexbox for better control */
     flex-direction: column; /* Stack elements vertically */
