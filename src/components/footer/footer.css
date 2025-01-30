@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   width: 100%;
   text-align: center; /* Center text */
+  margin-top: 2rem;
 }
 
 .main {
@@ -27,6 +28,9 @@
   width: 100%;
 }
 
+.footer_logo:hover{
+  transform: scale(1.2);
+}
 .footer_logo img {
   width: 200px;
   height: auto;
@@ -48,7 +52,7 @@
 }
 
 .footer .social a {
-  color: #fff9;
+  color: #4db5ff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +66,8 @@
 }
 
 .footer .social a:hover {
-  background: #fff9;
+  background: transparent;
+  color: gray;
   transform: scale(1.2);
   border: 2px solid #4db5ff;
 }
