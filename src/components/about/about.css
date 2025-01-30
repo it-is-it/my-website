@@ -112,13 +112,14 @@ img {
   margin-bottom: 1rem;
 }
 
-/* Light Mode (default) */
+
 .about_contents p {
   margin: 3rem 0 2.6rem;
   color: #1f1f38; /* Default color for light mode */
   line-height: 1.9;
   font-size: 10rem;
   font-weight: 500;
+  text-align: left; /* Ensures text starts from the left */
 }
 
 /* Dark Mode */

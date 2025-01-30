@@ -29,10 +29,10 @@
 }
 
 .footer_logo:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .footer_logo img {
-  width: 200px;
+  width: 170px;
   height: auto;
 }
 
