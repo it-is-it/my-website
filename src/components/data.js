@@ -1,9 +1,7 @@
-import WP from "../assets/portfolio/wealthPandit.png";
+import Worldwise from "../assets/portfolio/worldwise.png";
 import YTClone from "../assets/portfolio/youtube_clone.png";
-import PRB from "../assets/portfolio/pacific.png";
 import movie from "../assets/portfolio/movie.png";
-import Abroad from "../assets/portfolio/abroadInstitute.png";
-import kumari from "../assets/portfolio/kumari.png";
+import Pizza from "../assets/portfolio/fastReactPizza.png";
 
 export const menu = [
   { title: "#home", icon: "fa-solid fa-house-user" },
@@ -17,50 +15,28 @@ export const menu = [
 export const data = [
   {
     id: 1,
-    Image: Abroad,
-    title: "Abroad Institute",
-    demo: "http://abroadinst.com",
+    Image: Pizza,
+    title: "Fast React Pizza",
+    demo: "https://fast-react-pizza-alpha-beryl.vercel.app/",
     description:
-      "An informative website about studying abroad, providing courses and consultancy services.",
-    imgs: [Abroad, Abroad, Abroad],
+      "Fast React Pizza is a modern pizza-ordering app built with React and Vite. The app provides an intuitive flow for ordering pizzas, tracking orders in real-time, and even auto-fetching your location using a custom geolocation hook.",
+    imgs: [Pizza, Pizza, Pizza],
     tools: ["React", "CSS", "HTML"],
-    urlgh: "https://github.com/username/abroad-institute", // Example GitHub URL
+    urlgh: "https://github.com/it-is-it/FastReactPizza",
   },
   {
     id: 2,
-    Image: PRB,
-    title: "Pacific Regional Bank",
-    demo: "https://pacificbank.peacenepal.com",
+    Image: Worldwise,
+    title: "WorldWise",
+    demo: "https://worldwise-lyart.vercel.app/",
     description:
-      "A banking website with features such as account management and loan applications.",
-    imgs: [PRB, PRB, PRB],
+      "WorldWise is a travel companion app that allows users to explore maps, navigate locations, and track the countries and cities they have visited.",
+    imgs: [Worldwise, Worldwise, Worldwise],
     tools: ["React", "Bootstrap", "CSS"],
-    urlgh: "https://github.com/username/pacific-bank", // Example GitHub URL
+    urlgh: "https://github.com/it-is-it/Worldwise",
   },
   {
     id: 3,
-    Image: WP,
-    title: "Wealth Pandit",
-    demo: "https://uat.wealthpandit.com",
-    description:
-      "An investment platform offering advisory services and wealth management tools.",
-    imgs: ["/img/wealth1.png", "/img/wealth2.png", "/img/wealth3.png"],
-    tools: ["Angular", "CSS", "HTML"],
-    urlgh: "https://github.com/username/wealth-pandit", // Example GitHub URL
-  },
-  {
-    id: 4,
-    Image: kumari,
-    title: "Kumari Bank",
-    demo: "https://www.kumaribank.com/en",
-    description:
-      "A digital banking website providing online banking services to customers.",
-    imgs: ["/img/kumari1.png", "/img/kumari2.png", "/img/kumari3.png"],
-    tools: ["HTML", "CSS", "JavaScript"],
-    urlgh: "https://github.com/username/kumari-bank", // Example GitHub URL
-  },
-  {
-    id: 5,
     Image: YTClone,
     title: "Youtube Clone",
     github: "https://github.com/Prashant8Khatiwada/youtube-app",
@@ -69,10 +45,10 @@ export const data = [
       "A clone of YouTube with features like video playback, search, and a comment section.",
     imgs: ["/img/ytclone1.png", "/img/ytclone2.png"],
     tools: ["React", "CSS", "HTML"],
-    urlgh: "https://github.com/Prashant8Khatiwada/youtube-app", // Example GitHub URL
+    urlgh: "https://github.com/Prashant8Khatiwada/youtube-app",
   },
   {
-    id: 6,
+    id: 4,
     Image: movie,
     title: "Movie App",
     github: "git@github.com:Prashant8Khatiwada/movie.git",
@@ -84,8 +60,8 @@ export const data = [
     urlgh: "https://github.com/Prashant8Khatiwada/movie", // Example GitHub URL
   },
   {
-    id: 7,
-    Image:movie,
+    id: 5,
+    Image: movie,
     title: "E-Commerce Store",
     github: "https://github.com/username/ecommerce-store",
     demo: "https://ecommerce-store.netlify.app/",
@@ -100,7 +76,7 @@ export const data = [
     urlgh: "https://github.com/username/ecommerce-store",
   },
   {
-    id: 8,
+    id: 6,
     Image: movie,
     title: "Task Manager",
     github: "https://github.com/username/task-manager",
@@ -115,7 +91,7 @@ export const data = [
     urlgh: "https://github.com/username/task-manager",
   },
   {
-    id: 9,
+    id: 7,
     Image: movie,
     title: "Weather App",
     github: "https://github.com/username/weather-app",
@@ -130,7 +106,7 @@ export const data = [
     urlgh: "https://github.com/username/weather-app",
   },
   {
-    id: 10,
+    id: 8,
     Image: movie,
     title: "Personal Blog",
     github: "https://github.com/username/personal-blog",
@@ -145,7 +121,7 @@ export const data = [
     urlgh: "https://github.com/username/personal-blog",
   },
   {
-    id: 11,
+    id: 9,
     Image: movie,
     title: "Chat Application",
     github: "https://github.com/username/chat-app",
@@ -159,21 +135,6 @@ export const data = [
     tools: ["React", "Firebase", "WebSocket"],
     urlgh: "https://github.com/username/chat-app",
   },
-  {
-    id: 12,
-    Image: movie,
-    title: "Portfolio Website",
-    github: "https://github.com/username/portfolio",
-    demo: "https://portfolio.netlify.app/",
-    description:
-      "A personal portfolio website to showcase projects and skills. It includes animations, smooth scroll, and dark mode toggle.",
-    imgs: [
-      "https://via.placeholder.com/400x300.png?text=Portfolio+1",
-      "https://via.placeholder.com/400x300.png?text=Portfolio+2",
-    ],
-    tools: ["React", "CSS", "JavaScript", "Netlify"],
-    urlgh: "https://github.com/username/portfolio",
-  },
 ];
 
 export const CertificatesCards = [
@@ -181,7 +142,7 @@ export const CertificatesCards = [
     year: "2022-2026",
     edu: "BACHELOR OF SCIENCE IN COMPUTER SCIENCE AND INFORMATION TECHNOLOGY (BSc CSIT)",
     university: "Tribhuvan University",
-  }
+  },
 ];
 
 export const contactBox = [
