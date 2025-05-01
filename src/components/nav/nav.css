@@ -27,7 +27,7 @@ nav a {
 }
 
 nav a svg {
-  fill: #a1a1a1;
+  fill: #555555;
   transition: fill 0.3s ease;
 }
 

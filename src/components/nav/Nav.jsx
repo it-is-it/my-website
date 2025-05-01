@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./nav.css";
 import { AiFillHome, AiOutlineMail } from "react-icons/ai"; // Updated Home and Contact Icons
-import { FaUserAlt, FaCode, FaSuitcase, FaAddressBook } from "react-icons/fa"; 
+import { FaUserAlt, FaCode, FaSuitcase, FaAddressBook } from "react-icons/fa";
 
 function Nav() {
-  const [activeNav, setActiveNav] = useState("#");
+  const [activeNav, setActiveNav] = useState("#home");
 
   // Function for scrolling to a section
   const handleScroll = (section) => {

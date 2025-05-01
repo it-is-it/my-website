@@ -22,7 +22,7 @@ export const data = [
       "Fast React Pizza is a modern pizza-ordering app built with React and Vite. The app provides an intuitive flow for ordering pizzas, tracking orders in real-time, and even auto-fetching your location using a custom geolocation hook.",
     imgs: [Pizza, Pizza, Pizza],
     tools: ["React", "CSS", "HTML"],
-    urlgh: "https://github.com/it-is-it/FastReactPizza",
+    github: "https://github.com/it-is-it/FastReactPizza",
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ export const data = [
       "WorldWise is a travel companion app that allows users to explore maps, navigate locations, and track the countries and cities they have visited.",
     imgs: [Worldwise, Worldwise, Worldwise],
     tools: ["React", "Bootstrap", "CSS"],
-    urlgh: "https://github.com/it-is-it/Worldwise",
+    github: "https://github.com/it-is-it/Worldwise",
   },
   {
     id: 3,
