@@ -1,3 +1,4 @@
+import WildOasis from "../assets/portfolio/wildoasis.png"; // Make sure you have this image
 import Worldwise from "../assets/portfolio/worldwise.png";
 import YTClone from "../assets/portfolio/youtube_clone.png";
 import movie from "../assets/portfolio/movie.png";
@@ -15,6 +16,17 @@ export const menu = [
 export const data = [
   {
     id: 1,
+    Image: WildOasis,
+    title: "Wild Oasis Admin System",
+    demo: "https://the-wild-oasis-ishwor.netlify.app/",
+    description:
+      "A sleek admin dashboard for managing hotel bookings, cabins, and user roles with check-in/out system, real-time stats, dark mode, and customizable settings.",
+    imgs: [WildOasis, WildOasis, WildOasis],
+    tools: ["React", "Tailwind CSS", "Supabase"],
+    github: "https://github.com/it-is-it/the-wild-oasis",
+  },
+  {
+    id: 2,
     Image: Pizza,
     title: "Fast React Pizza",
     demo: "https://fast-react-pizza-alpha-beryl.vercel.app/",
@@ -25,7 +37,7 @@ export const data = [
     github: "https://github.com/it-is-it/FastReactPizza",
   },
   {
-    id: 2,
+    id: 3,
     Image: Worldwise,
     title: "WorldWise",
     demo: "https://worldwise-lyart.vercel.app/",
@@ -36,7 +48,7 @@ export const data = [
     github: "https://github.com/it-is-it/Worldwise",
   },
   {
-    id: 3,
+    id: 4,
     Image: YTClone,
     title: "Youtube Clone",
     demo: "https://p-youtube-clone.netlify.app",
@@ -46,7 +58,7 @@ export const data = [
     tools: ["React", "CSS", "HTML"],
   },
   {
-    id: 4,
+    id: 5,
     Image: movie,
     title: "Movie App",
     demo: "https://web-movie-app.netlify.app/",
