@@ -1,4 +1,4 @@
-import WildOasis from "../assets/portfolio/wildoasis.png"; // Make sure you have this image
+import WildOasis from "../assets/portfolio/wildoasis.png";
 import Worldwise from "../assets/portfolio/worldwise.png";
 import YTClone from "../assets/portfolio/youtube_clone.png";
 import movie from "../assets/portfolio/movie.png";
