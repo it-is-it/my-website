@@ -94,3 +94,5 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 > Crafted with 💙 by Ishwor Timalsina — [ishwortimalsina.com.np](https://www.ishwortimalsina.com.np/)
+
+Bye Bye
