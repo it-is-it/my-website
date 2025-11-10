@@ -38,8 +38,17 @@ const DetailsProjects = () => {
           </div>
 
           <div className="container-text">
-            <h3>{card.description}</h3>{" "}
-            <h3>Skills:</h3>
+            <h3 style={{ marginBottom: "1rem" }}>{card.description}</h3>{" "}
+            <h3
+              style={{
+                marginRight: "4rem",
+                marginBottom: "1rem",
+                fontWeight: "bold",
+                fontSize: "1.5rem",
+              }}
+            >
+              Skills:
+            </h3>
             <div className="child">
               {skillsarray.map((element, index) => (
                 <div key={index}>
@@ -56,8 +65,12 @@ const DetailsProjects = () => {
                   </svg>
                   <h4>{element}</h4>
                 </div>
-              ))} 
-              <a href={card.demo} className="btn btn-primary">
+              ))}
+              <a
+                style={{ marginTop: "2rem" }}
+                href={card.demo}
+                className="btn btn-primary"
+              >
                 Live Demo
               </a>
               <a href={card.urlgh} className="btn btn-primary">

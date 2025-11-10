@@ -3,6 +3,31 @@ import Worldwise from "../assets/portfolio/worldwise.png";
 import YTClone from "../assets/portfolio/youtube_clone.png";
 import movie from "../assets/portfolio/movie.png";
 import Pizza from "../assets/portfolio/fastReactPizza.png";
+import NextEcommerce from "../assets/portfolio/nextEcommerce.png";
+
+// NextEcom images
+import nextecom1 from "../assets/portfolio/detail-image/nextecom1.png";
+import nextecom2 from "../assets/portfolio/detail-image/nextecom2.png";
+import nextecom3 from "../assets/portfolio/detail-image/nextecom3.png";
+import nextecom4 from "../assets/portfolio/detail-image/nextecom4.png";
+
+// Pizza images
+import pizza1 from "../assets/portfolio/detail-image/pizza1.png";
+import pizza2 from "../assets/portfolio/detail-image/pizza2.png";
+import pizza3 from "../assets/portfolio/detail-image/pizza3.png";
+import pizza4 from "../assets/portfolio/detail-image/pizza4.png";
+
+// Wild Oasis images
+import wildoasis1 from "../assets/portfolio/detail-image/wildoasis1.png";
+import wildoasis2 from "../assets/portfolio/detail-image/wildoasis2.png";
+import wildoasis3 from "../assets/portfolio/detail-image/wildoasis3.png";
+import wildoasis4 from "../assets/portfolio/detail-image/wildoasis4.png";
+
+// Worldwise images
+import worldwise1 from "../assets/portfolio/detail-image/worldwise1.png";
+import worldwise2 from "../assets/portfolio/detail-image/worldwise2.png";
+import worldwise3 from "../assets/portfolio/detail-image/worldwise3.png";
+import worldwise4 from "../assets/portfolio/detail-image/worldwise4.png";
 
 export const menu = [
   { title: "#home", icon: "fa-solid fa-house-user" },
@@ -16,39 +41,57 @@ export const menu = [
 export const data = [
   {
     id: 1,
+    Image: NextEcommerce, // import this image at the top
+    title: "Next-Ecommerce",
+    demo: "https://your-next-ecom-demo.vercel.app/", // replace with your live demo link
+    description:
+      "NextEcom is a full-featured, full-stack eCommerce web application built with Next.js 15 (App Router), MongoDB, Stripe, and NextAuth.js. It includes both user and admin functionalities, secure payment processing, and a modern UI powered by Bootstrap and Tailwind.",
+    imgs: [nextecom1, nextecom2, nextecom3, nextecom4],
+    tools: [
+      "Next.js",
+      "Tailwind CSS",
+      "Bootstrap",
+      "MongoDB",
+      "Stripe",
+      "NextAuth.js",
+    ],
+    github: "https://github.com/it-is-it/Ecommerce", // replace with your repo
+  },
+  {
+    id: 2,
     Image: WildOasis,
     title: "Wild Oasis Admin System",
     demo: "https://the-wild-oasis-ishwor.netlify.app/",
     description:
       "A sleek admin dashboard for managing hotel bookings, cabins, and user roles with check-in/out system, real-time stats, dark mode, and customizable settings.",
-    imgs: [WildOasis, WildOasis, WildOasis],
+    imgs: [wildoasis1, wildoasis2, wildoasis3, wildoasis4],
     tools: ["React", "Tailwind CSS", "Supabase"],
     github: "https://github.com/it-is-it/the-wild-oasis",
   },
   {
-    id: 2,
+    id: 3,
     Image: Pizza,
     title: "Fast React Pizza",
     demo: "https://fast-react-pizza-alpha-beryl.vercel.app/",
     description:
       "Fast React Pizza is a modern pizza-ordering app built with React and Vite. The app provides an intuitive flow for ordering pizzas, tracking orders in real-time, and even auto-fetching your location using a custom geolocation hook.",
-    imgs: [Pizza, Pizza, Pizza],
+    imgs: [pizza1, pizza2, pizza3, pizza4],
     tools: ["React", "CSS", "HTML"],
     github: "https://github.com/it-is-it/FastReactPizza",
   },
   {
-    id: 3,
+    id: 4,
     Image: Worldwise,
     title: "WorldWise",
     demo: "https://worldwise-lyart.vercel.app/",
     description:
       "WorldWise is a travel companion app that allows users to explore maps, navigate locations, and track the countries and cities they have visited.",
-    imgs: [Worldwise, Worldwise, Worldwise],
+    imgs: [worldwise1, worldwise2, worldwise3, worldwise4],
     tools: ["React", "Bootstrap", "CSS"],
     github: "https://github.com/it-is-it/Worldwise",
   },
   {
-    id: 4,
+    id: 5,
     Image: YTClone,
     title: "Youtube Clone",
     demo: "https://p-youtube-clone.netlify.app",
@@ -58,7 +101,7 @@ export const data = [
     tools: ["React", "CSS", "HTML"],
   },
   {
-    id: 5,
+    id: 6,
     Image: movie,
     title: "Movie App",
     demo: "https://web-movie-app.netlify.app/",
