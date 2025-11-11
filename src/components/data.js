@@ -43,7 +43,7 @@ export const data = [
     id: 1,
     Image: NextEcommerce, // import this image at the top
     title: "Next-Ecommerce",
-    demo: "https://your-next-ecom-demo.vercel.app/", // replace with your live demo link
+    demo: "https://nextecom-bay.vercel.app/", // replace with your live demo link
     description:
       "NextEcom is a full-featured, full-stack eCommerce web application built with Next.js 15 (App Router), MongoDB, Stripe, and NextAuth.js. It includes both user and admin functionalities, secure payment processing, and a modern UI powered by Bootstrap and Tailwind.",
     imgs: [nextecom1, nextecom2, nextecom3, nextecom4],
